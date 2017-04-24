@@ -485,7 +485,9 @@ map <Leader>bl :MBEToggle<cr>
 
 " buffer 切换快捷键
 map <C-Tab> :MBEbn<cr>
+map <leader>bn :MBEbn<cr>
 map <C-S-Tab> :MBEbp<cr>
+map <leader>bp :MBEbp<cr>
 
 " <<
 
@@ -528,4 +530,8 @@ let g:wildfire_objects = ["i'", 'i"', "i)", "i]", "i}", "i>", "ip"]
 
 " 调用 gundo 树
 nnoremap <Leader>ud :GundoToggle<CR>
+
+
+" 打开Shell
+nmap <leader>sh :shell<cr>
 
