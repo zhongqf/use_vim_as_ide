@@ -340,9 +340,9 @@ nmap <Leader>tp :tprevious<CR>
 
 " 基于语义的代码导航
 
-nnoremap <leader>jc :YcmCompleter GoToDeclaration<CR>
+" nnoremap <leader>jc :YcmCompleter GoToDeclaration<CR>
 " 只能是 #include 或已打开的文件
-nnoremap <leader>jd :YcmCompleter GoToDefinition<CR>
+" nnoremap <leader>jd :YcmCompleter GoToDefinition<CR>
 
 " <<
 
@@ -407,36 +407,36 @@ let g:UltiSnipsJumpBackwardTrigger="<leader><s-tab>"
 
 " YCM 补全菜单配色
 " 菜单
-highlight Pmenu ctermfg=2 ctermbg=3 guifg=#005f87 guibg=#EEE8D5
+" highlight Pmenu ctermfg=2 ctermbg=3 guifg=#005f87 guibg=#EEE8D5
 " 选中项
-highlight PmenuSel ctermfg=2 ctermbg=3 guifg=#AFD700 guibg=#106900
+" highlight PmenuSel ctermfg=2 ctermbg=3 guifg=#AFD700 guibg=#106900
 
 " 补全功能在注释中同样有效
-let g:ycm_complete_in_comments=1
+" let g:ycm_complete_in_comments=1
 
 " 允许 vim 加载 .ycm_extra_conf.py 文件，不再提示
-let g:ycm_confirm_extra_conf=0
+" let g:ycm_confirm_extra_conf=0
 
 " 开启 YCM 标签补全引擎
-let g:ycm_collect_identifiers_from_tags_files=0
+" let g:ycm_collect_identifiers_from_tags_files=0
 "" 引入 C++ 标准库 tags
-"set tags+=/data/misc/software/app/vim/stdcpp.tags
-"set tags+=/data/misc/software/app/vim/sys.tags
+" set tags+=/data/misc/software/app/vim/stdcpp.tags
+" set tags+=/data/misc/software/app/vim/sys.tags
 
 " YCM 集成 OmniCppComplete 补全引擎，设置其快捷键
-inoremap <leader>; <C-x><C-o>
+" inoremap <leader>; <C-x><C-o>
 
 " 补全内容不以分割子窗口形式出现，只显示补全列表
-set completeopt-=preview
+" set completeopt-=preview
 
 " 从第一个键入字符就开始罗列匹配项
-let g:ycm_min_num_of_chars_for_completion=1
+" let g:ycm_min_num_of_chars_for_completion=1
 
 " 禁止缓存匹配项，每次都重新生成匹配项
-let g:ycm_cache_omnifunc=0
+" let g:ycm_cache_omnifunc=0
 
 " 语法关键字补全
-let g:ycm_seed_identifiers_with_syntax=1
+" let g:ycm_seed_identifiers_with_syntax=1
 
 " <<
  
@@ -444,7 +444,7 @@ let g:ycm_seed_identifiers_with_syntax=1
 " 由接口快速生成实现框架
 
 " 成员函数的实现顺序与声明顺序一致
-let g:disable_protodef_sorting=1
+" let g:disable_protodef_sorting=1
 
 " <<
 
@@ -511,8 +511,8 @@ map <leader>rs :source my.vim<cr>
 " <<
  
 " 设置快捷键实现一键编译及运行
-nmap <Leader>m :wa<CR> :cd build/<CR> :!rm -rf main<CR> :!cmake CMakeLists.txt<CR>:make<CR><CR> :cw<CR> :cd ..<CR>
-nmap <Leader>g :wa<CR>:cd build/<CR>:!rm -rf main<CR>:!cmake CMakeLists.txt<CR>:make<CR><CR>:cw<CR>:cd ..<CR>:!build/main<CR>
+" nmap <Leader>m :wa<CR> :cd build/<CR> :!rm -rf main<CR> :!cmake CMakeLists.txt<CR>:make<CR><CR> :cw<CR> :cd ..<CR>
+" nmap <Leader>g :wa<CR>:cd build/<CR>:!rm -rf main<CR>:!cmake CMakeLists.txt<CR>:make<CR><CR>:cw<CR>:cd ..<CR>:!build/main<CR>
 
 " >>
 " 快速选中结对符内的文本
